@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background: #623400;
+    color: #ffffff;
+}
+a{
+    text-decoration:none ;
+}
+@font-face {
+    font-family: cursive;
+    src: url(./fonts/CanvasScript_Reg.woff);
+}
+
+@font-face {
+    font-family: brushed;
+    src: url(./fonts/CheapPotatoes.woff);
+}
+
+@font-face {
+    font-family: design;
+    src: url(./fonts/CharcuterieFiligree.woff);
+}
+
+@font-face {
+    font-family: brushed2;
+    src: url(./fonts/CheapPotatoes.woff2);
+}
+@font-face{
+    font-family: new;
+    src: url(./fonts/CharcuterieFlaredBold.woff);
+}
+
+.navbar-brand {
+    width: 100px;
+    /* position: absolute; */
+    /* top: 20%; */
+}
+
+.navbar-brand img {
+    margin: 3% 50%;
+
+}
+
+.navbar-nav {
+    margin-left: 28% !important;
+}
+
+.nav-item {
+    /* margin-left: -50% !important; */
+    margin-right: 25%;
+
+}
+
+.nav-link {
+    color: #7f3402 !important;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 20px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    width: 90%;
+    height: 3px;
+    position: absolute;
+    background: #554546;
+    bottom: -20%;
+    transform: scale(0);
+    border-radius: 20px;
+    left: 5%;
+    transition: 0.25s;
+
+}
+
+.nav-link:hover::after {
+    transform: scale(1);
+}
+
+.buttons {
+    width: auto;
+    margin-right: 2%;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button {
+    padding: 5%;
+    width: 80px;
+    border: 1px solid #694100 !important;
+    font-weight: bold;
+    border-radius: 0;
+
+}
+
+.login {
+    border-top-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    color: #7f3402;
+
+}
+
+.signup {
+    border-top-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    background-color: #7f3402;
+    color: white;
+}
+#page1Div {
+    padding: 5%;
+    color: #7f3402;
+    /* background: #7f340284; */
+    backdrop-filter: blur(2px);
+}
+#page1Div h5{
+    overflow: hidden;
+}
+#page1Div h5 span{
+    display:inline-block;
+    padding-left: 1%;
+}
+#page1Div h1{
+    margin-top: -8%;
+    overflow: hidden;
+}
+#page1Div h1 span{
+    font-size: 13vw;
+    font-family: design;
+    margin-left: 0;
+    text-shadow: 10px 0 10px #00000051;
+    display: inline-block;
+}
+
+#page1Div .btn {
+    border-radius: 0;
+    width: 10vw;
+    font-weight: bold;
+    margin: 3% 2%;
+    padding: 2%;
+    border: 2px solid #7f3402;
+    box-shadow: 0 10px 20px #00000051;
+}
+
+.btn:hover {
+    color: #7f3402;
+}
+
+.pricetag {
+    /* position: absolute; */
+    display: inline-block;
+    margin-left: 2vw;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: cursive;
+}
+#page1Img{
+    position: relative;
+    overflow: hidden;
+    /* box-shadow: inset 0 0 10px #00000051; */
+    padding: 1%;
+}
+.ImgOverlay{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#firstImage{
+    width: 100%;
+    height: 80vh;
+    filter: drop-shadow(10px 5px 18px #000000a2);
+    
+}
+#page2 {
+    /* position: relative; */
+    padding: 5% 0;
+    overflow: hidden;
+    background: url(./Images/allsorts-on-green-background.jpg) center center/cover;
+}
+.page2InnerDiv {
+    text-align: center;
+    color: #7f3402;
+    font-family: cursive;
+    
+}
+.page2txt{
+    /* height: 10vh; */
+    background-color: #ffffff63;
+    backdrop-filter: blur(5px);
+    padding: 5% 0;
+    border-radius: 10px;
+}
+.page2txt h4 {
+    margin-bottom: 0%;
+}
+
+.page2txt h2 {
+    /* padding-bottom: 20%; */
+    color: rgb(0, 0, 0);
+}
+
+.page2txt {
+    z-index: 9;
+    /* position: absolute; */
+    bottom: 50%;
+    font-weight: bold;
+}
+
+#page3 {
+    padding: 2% 0;
+}
+#page3Div{
+overflow: hidden;
+
+}
+.pageThree {
+    padding: 5%;
+    position: relative;
+}
+
+.pageThree h1 {
+    font-family: brushed;
+    color: #7f3402;
+    margin: 5% 0 20%;
+}
+
+.pageThree p {
+    margin: 5% 0;
+}
+
+#page3Div2 {
+    position: relative;
+}
+
+#page3Div2 img {
+    position: absolute;
+}
+
+#heart {
+    top: -5%;
+    right: -12%;
+}
+
+#blackSeed {
+    bottom: 0;
+    right: 0;
+}
+
+.pagebtn {
+    border-radius: 0;
+    width: 10vw;
+    font-weight: bold;
+    margin: 3% 2%;
+    padding: 2%;
+    border: 2px solid #7f3402;
+    box-shadow: 0 10px 20px #00000051;
+}
+
+p {
+    text-align: justify;
+}
+
+#page4 {
+    padding: 2% 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+#page4Div h1 {
+    font-family: brushed;
+    color: #7f3402;
+    margin: 5% 0 10%;
+}
+
+#banner {
+    position: absolute;
+    border-width: 80px;
+    border-image: url(./Images/frame-pink-style-one.png) 100/1/0 round;
+    /* background: #e0ff32; */
+    border-style: dashed;
+    background: url(./Images/licorices-red-yellow-300x140.png.webp) no-repeat center/cover;
+    width: 40vw;
+    top: 50%;
+    left: 20%;
+    text-align: center;
+    font-family: design;
+    color: #006727ec;
+    padding: 0;
+}
+
+#banner h3 {
+    background: #ff9d9d35;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding: 5%;
+    margin: 0;
+}
+
+#page4Img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#page4Img img {
+    filter: drop-shadow(0 0 25px #00000092);
+}
+
+#leaf1 {
+    transform: rotateX(180deg);
+    width: 20vw;
+    top: 70%;
+    left: -160%;
+    position: absolute;
+}
+
+#page5 {
+    margin-top: 5%;
+    /* margin-bottom: 5%; */
+    padding: 5% 0 10%;
+    background:url(./Images/allsorts-on-green-background.jpg) center center/cover;
+    background-attachment: fixed;
+    position: relative;    
+}
+
+#page5 h1 {
+    font-family: brushed;
+    color: #7f3402;
+    margin: 0% 0 5%;
+    
+}
+
+#page5 h6 {
+    font-family: cursive;
+    color: #7f3402;
+    margin: 2% 0 5%;
+}
+#page5 ul{
+    backdrop-filter: blur(3px);
+    background: #ffffff39;
+    width: 100%;
+    padding: 8% 8%;
+    border-radius: 20px;
+}
+#page5 li {
+    margin: 10% 0;
+}
+
+.navlink-page5 {
+    text-decoration:none none;
+    color: #623400;
+    font-weight: bold;
+    font-size: 1.3vw;
+    font-family: cursive;
+
+}
+
+#page5Product {
+    overflow: hidden
+}
+
+.packets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 0 2%; */
+    padding:0 5% 5%;
+    backdrop-filter: blur(2px);
+    background: #ffffff5e;
+    border-radius: 20px;
+}
+
+.packets img {
+    height: 40vh !important;
+    filter: drop-shadow(0 10px 30px #0000007c);
+
+    /* background: #ff98f3; */
+}
+#range{
+    padding: 10% 0 5%;
+    background: url(./Images/dlea-light-cardboard-pattern.png);
+}
+#range div{
+    overflow: hidden;
+}
+#range h1{
+    text-align: center;
+    font-family: brushed;
+    color: #7f3402;
+    margin: 0% 0 8%;
+}
+#page6{
+    padding: 20% 0 0;
+    background: url(./Images/plants-grass-background.png) center center/cover;
+}
+#page6 h1{
+    text-align: center;
+    font-family: brushed;
+    color: #7f3402;
+    margin: 0% 0 5%;
+}
+
+#page6Div{
+    text-align: center;
+    color: #7f3402;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page6Box{
+    height: 60vh;
+    width: 70vw;
+    /* background: #ffffff !important; */
+    margin: 5%;
+}
+.carousel-item{
+    padding: 3% 0;
+    color: #fff;
+    /* text-align: center;background: #f7610a77; */
+}
+.carousel-inner{
+    /* background: url(./Images/our-story-bg-sprite.png) center center/cover; */
+}
+.carousel-item h2{
+    color: #ffdf2c;
+
+}
+.carousel-item p{
+    text-align: center;
+    margin: 8% auto;
+    width: 30%;
+    font-family: cursive;
+}
+#footer{
+    padding: 1% 5%;
+    /* height: 30vh; */
+    background: url(./Images/dlea-light-cardboard-pattern.png) ;
+}
+#footer h1{
+    color: #55fe00;
+    text-align: left;
+    margin: 0;
+    font-size: 5vw;
+    font-family: design;
+}
+#footer h4{
+    font-family: brushed2;
+    color: #7f3402;
+    font-family: 700;
+}
+#footer h4 span{
+    font-family: design;
+    font-size: 3vw;
+    color: #fe4c00; 
+}
+#footerRight{
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column;
+    align-items: end; */
+}
+#footerRight a{
+    overflow: hidden;
+}
+#footerRight a h5{
+    font-family: new;
+    font-size: 1.7vw;
+    color: #8c00ff;
+    transition: 0.25s;
+}
+#footerRight a h5:hover{
+    color: #fe4c00;
+}
